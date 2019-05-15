@@ -409,7 +409,7 @@ class SaleItem(ModelBase):
         db_index=False
     )
     product = models.ForeignKey(
-        to='ProductGroup',
+        to='Product',
         on_delete=models.DO_NOTHING,
         db_column='id_product',
         null=False,
@@ -428,4 +428,35 @@ class SaleItem(ModelBase):
         indexes = [
             models.Index(fields=['sale']),
             models.Index(fields=['product'])
+        ]
+
+
+class MeansPaymentSale(ModelBase):
+    sale = models.ForeignKey(
+        to='Sale',
+        on_delete=models.DO_NOTHING,
+        db_column='id_sale',
+        null=False,
+        db_index=False
+    )
+    means_payment = models.ForeignKey(
+        to='MeansPayment',
+        on_delete=models.DO_NOTHING,
+        db_column='id_means_payment',
+        null=False,
+        db_index=False
+    )
+    value = models.DecimalField(
+        db_column='nb_value',
+        null=False,
+        max_digits=16,
+        decimal_places=4
+    )
+
+    class Meta:
+        db_table = 'means_payment_sale'
+        managed = True
+        indexes = [
+            models.Index(fields=['sale']),
+            models.Index(fields=['means_payment']),
         ]
