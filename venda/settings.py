@@ -138,3 +138,21 @@ REST_FRAMEWORK = {
     # ),
     'COERCE_DECIMAL_TO_STRING': False
 }
+
+LOGGING = {
+    'version': 1,
+    'handlers': {
+        'sql_file_log': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': '/tmp/sql.log',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['sql_file_log'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
