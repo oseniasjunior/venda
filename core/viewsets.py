@@ -1,12 +1,13 @@
 from rest_framework import viewsets
 from rest_framework.decorators import action
 
-from core import models, serializers, queries
+from core import models, serializers, queries, filters
 
 
 class ZoneViewSet(viewsets.ModelViewSet):
     queryset = models.Zone.objects.all()
     serializer_class = serializers.ZoneSerializer
+    filter_class = filters.ZoneFilterSet
 
     @action(detail=False, methods=['GET'])
     def get_total_customer(self, request, *args, **kwargs):
@@ -24,6 +25,11 @@ class StateViewSet(viewsets.ModelViewSet):
         queryset = queries.get_state_by_name(name=name)
         self.queryset = queryset
         return super(StateViewSet, self).list(request, *args, **kwargs)
+
+
+class DistrictViewSet(viewsets.ModelViewSet):
+    queryset = models.District.objects.select_related('city', 'zone').all()
+    serializer_class = serializers.DistrictSerializer
 
 
 class CityViewSet(viewsets.ModelViewSet):
