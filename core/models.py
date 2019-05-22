@@ -184,6 +184,9 @@ class Customer(ModelBase):
             models.Index(fields=['district'])
         ]
 
+    def __str__(self):
+        return self.name
+
 
 class BranchOffice(ModelBase):
     name = models.CharField(
@@ -294,6 +297,9 @@ class Employee(ModelBase):
             models.Index(fields=['manager']),
         ]
 
+    def __str__(self):
+        return self.name
+
 
 class ProductGroup(ModelBase):
     description = models.CharField(
@@ -361,6 +367,9 @@ class Product(ModelBase):
             models.Index(fields=['supplier'])
         ]
 
+    def __str__(self):
+        return self.name
+
 
 class Sale(ModelBase):
     date = models.DateTimeField(
@@ -421,6 +430,12 @@ class SaleItem(ModelBase):
         decimal_places=3,
         null=False
     )
+    subtotal = models.DecimalField(
+        db_column='nb_subtotal',
+        max_digits=10,
+        decimal_places=4,
+        null=True
+    )
 
     class Meta:
         db_table = 'sale_item'
@@ -459,4 +474,88 @@ class MeansPaymentSale(ModelBase):
         indexes = [
             models.Index(fields=['sale']),
             models.Index(fields=['means_payment']),
+        ]
+
+
+class StockAddress(ModelBase):
+    description = models.CharField(
+        db_column='tx_description',
+        null=False,
+        max_length=104
+    )
+
+    class Meta:
+        db_table = 'stock_address'
+        managed = True
+
+    def __str__(self):
+        return '{} - {}'.format(self.pk, self.description)
+
+
+class MovementStock(ModelBase):
+    IN = 'I'
+    OUT = 'O'
+    TYPE_CHOICES = (
+        (IN, 'In'),
+        (OUT, 'Out')
+    )
+    date = models.DateField(
+        db_column='dt_movement_stock',
+        null=False
+    )
+    stock_address = models.ForeignKey(
+        to='StockAddress',
+        on_delete=models.DO_NOTHING,
+        db_column='id_stock_address',
+        null=False,
+        db_index=False
+    )
+    type = models.CharField(
+        db_column='cs_type',
+        null=False,
+        max_length=1,
+        choices=TYPE_CHOICES
+    )
+    document = models.CharField(
+        db_column='tx_document',
+        null=True,
+        max_length=64
+    )
+
+    class Meta:
+        db_table = 'movement_stock'
+        managed = True
+        indexes = [
+            models.Index(fields=['stock_address'])
+        ]
+
+
+class MovementStockItem(ModelBase):
+    movement_stock = models.ForeignKey(
+        to='MovementStock',
+        on_delete=models.DO_NOTHING,
+        db_column='id_movement_stock',
+        null=False,
+        db_index=False
+    )
+    product = models.ForeignKey(
+        to='Product',
+        on_delete=models.DO_NOTHING,
+        db_column='id_product',
+        null=False,
+        db_index=False
+    )
+    quantity = models.DecimalField(
+        db_column='nb_quantity',
+        null=False,
+        max_digits=10,
+        decimal_places=3
+    )
+
+    class Meta:
+        db_table = 'movement_stock_item'
+        managed = True
+        indexes = [
+            models.Index(fields=['movement_stock']),
+            models.Index(fields=['product'])
         ]
