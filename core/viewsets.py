@@ -35,3 +35,31 @@ class DistrictViewSet(viewsets.ModelViewSet):
 class CityViewSet(viewsets.ModelViewSet):
     queryset = models.City.objects.select_related('state').all()
     serializer_class = serializers.CitySerializer
+
+
+class StockAddressViewSet(viewsets.ModelViewSet):
+    queryset = models.StockAddress.objects.all()
+    serializer_class = serializers.StockAddressSerializer
+
+
+class MovementStockViewSet(viewsets.ModelViewSet):
+    queryset = models.MovementStock.objects.all()
+    serializer_class = serializers.MovementStockSerializer
+    filter_class = filters.MovementStockFilterSet
+
+
+class ProductGroupViewSet(viewsets.ModelViewSet):
+    queryset = models.ProductGroup.objects.all()
+    serializer_class = serializers.ProductGroupSerializer
+    # filter_class = filters.MovementStockFilterSet
+
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = models.Product.objects.all()
+    serializer_class = serializers.ProductSerializer
+    filter_class = filters.ProductFilterSet
+
+
+class SupplierViewSet(viewsets.ModelViewSet):
+    queryset = models.Supplier.objects.all()
+    serializer_class = serializers.SupplierSerializer
