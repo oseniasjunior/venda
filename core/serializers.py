@@ -42,3 +42,33 @@ class DistrictSerializer(SerializerBase):
     class Meta:
         model = models.District
         fields = '__all__'
+
+
+class StockAddressSerializer(SerializerBase):
+    class Meta:
+        model = models.StockAddress
+        fields = '__all__'
+
+
+class MovementStockSerializer(SerializerBase):
+    class Meta:
+        model = models.MovementStock
+        fields = '__all__'
+
+
+class ProductGroupSerializer(SerializerBase):
+    class Meta:
+        model = models.ProductGroup
+        fields = '__all__'
+
+
+class ProductSerializer(SerializerBase):
+    class Meta:
+        model = models.Product
+        fields = '__all__'
+
+
+class SupplierSerializer(SerializerBase):
+    class Meta:
+        model = models.Supplier
+        fields = '__all__'
