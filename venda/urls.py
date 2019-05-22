@@ -23,6 +23,7 @@ router = DefaultRouter()
 router.register('zone', viewset=viewsets.ZoneViewSet)
 router.register('state', viewset=viewsets.StateViewSet)
 router.register('city', viewset=viewsets.CityViewSet)
+router.register('district', viewset=viewsets.DistrictViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
