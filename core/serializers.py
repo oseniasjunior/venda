@@ -15,7 +15,7 @@ class ZoneSerializer(SerializerBase):
 
     class Meta:
         model = models.Zone
-        fields = '__all__'
+        fields = ['id', 'url', 'name', 'counter']
 
 
 class StateSerializer(SerializerBase):
@@ -35,4 +35,10 @@ class CitySerializer(SerializerBase):
 
     class Meta:
         model = models.City
+        fields = '__all__'
+
+
+class DistrictSerializer(SerializerBase):
+    class Meta:
+        model = models.District
         fields = '__all__'
