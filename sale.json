@@ -176,6 +176,46 @@
     }
   },
   {
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+      "app_label": "core",
+      "model": "movementstock"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+      "app_label": "core",
+      "model": "stockaddress"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+      "app_label": "core",
+      "model": "movementstockitem"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qx95eewbqsjsk8xr2est0k197dgb488r",
+    "fields": {
+      "session_data": "NjE3ZDcwOTA3N2ZiMjdlZDc0OGQwN2JjZDY5ZjFkMTFlNWY3ZjczMDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiNGQ3YjIxMTI2OWUyZDEwZTE4NWZjYzY2OWVkMjM5NWJhNDdmYTlkIn0=",
+      "expire_date": "2019-06-04T23:42:50.051Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "ycejqp0tawlwliki6908y3cppubacyh3",
+    "fields": {
+      "session_data": "NjE3ZDcwOTA3N2ZiMjdlZDc0OGQwN2JjZDY5ZjFkMTFlNWY3ZjczMDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJiNGQ3YjIxMTI2OWUyZDEwZTE4NWZjYzY2OWVkMjM5NWJhNDdmYTlkIn0=",
+      "expire_date": "2019-06-06T23:04:20.129Z"
+    }
+  },
+  {
     "model": "core.zone",
     "pk": 1,
     "fields": {
@@ -3437,6 +3477,16 @@
     }
   },
   {
+    "model": "core.departament",
+    "pk": 9,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-16T19:10:34.535Z",
+      "modified_at": "2019-05-16T19:10:34.535Z",
+      "name": "departamento alterado"
+    }
+  },
+  {
     "model": "core.employee",
     "pk": 1,
     "fields": {
@@ -6076,15 +6126,211 @@
     }
   },
   {
+    "model": "core.sale",
+    "pk": 100,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:30:11.486Z",
+      "modified_at": "2019-05-22T00:30:11.486Z",
+      "date": "2019-05-22T00:29:57Z",
+      "employee": 1,
+      "branch_office": 2,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 103,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:36:39.328Z",
+      "modified_at": "2019-05-22T00:36:39.328Z",
+      "date": "2019-05-22T00:36:28Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 104,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:44:13.114Z",
+      "modified_at": "2019-05-22T00:44:13.114Z",
+      "date": "2019-05-22T00:43:56Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 112,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:35:33.444Z",
+      "modified_at": "2019-05-23T01:35:33.445Z",
+      "date": "2019-05-23T01:33:09Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 113,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:36:34.144Z",
+      "modified_at": "2019-05-23T01:36:34.145Z",
+      "date": "2019-05-23T01:36:19Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 121,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T02:00:26.455Z",
+      "modified_at": "2019-05-23T02:00:26.455Z",
+      "date": "2019-05-23T02:00:17Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 122,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:04:33.676Z",
+      "modified_at": "2019-05-23T23:04:33.676Z",
+      "date": "2019-05-23T23:04:22Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 1
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 123,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:05:38.569Z",
+      "modified_at": "2019-05-23T23:05:38.569Z",
+      "date": "2019-05-23T23:05:28Z",
+      "employee": 1,
+      "branch_office": 4,
+      "customer": 2
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 124,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:09:43.950Z",
+      "modified_at": "2019-05-23T23:09:43.950Z",
+      "date": "2019-05-23T23:09:35Z",
+      "employee": 1,
+      "branch_office": 1,
+      "customer": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 125,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:14:50.123Z",
+      "modified_at": "2019-05-23T23:14:50.123Z",
+      "date": "2019-05-23T23:14:40Z",
+      "employee": 1,
+      "branch_office": 3,
+      "customer": 4
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 126,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:15:56.322Z",
+      "modified_at": "2019-05-23T23:15:56.322Z",
+      "date": "2019-05-23T23:15:48Z",
+      "employee": 1,
+      "branch_office": 2,
+      "customer": 2
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 127,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:27.214Z",
+      "modified_at": "2019-05-23T23:16:27.214Z",
+      "date": "2019-05-23T23:16:17Z",
+      "employee": 5,
+      "branch_office": 4,
+      "customer": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 128,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:20:22.751Z",
+      "modified_at": "2019-05-23T23:20:22.751Z",
+      "date": "2019-05-23T23:20:13Z",
+      "employee": 5,
+      "branch_office": 4,
+      "customer": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 129,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:24:03.506Z",
+      "modified_at": "2019-05-23T23:24:03.506Z",
+      "date": "2019-05-23T23:23:55Z",
+      "employee": 3,
+      "branch_office": 4,
+      "customer": 3
+    }
+  },
+  {
+    "model": "core.sale",
+    "pk": 130,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:47.048Z",
+      "modified_at": "2019-05-23T23:31:47.048Z",
+      "date": "2019-05-23T23:28:33Z",
+      "employee": 3,
+      "branch_office": 2,
+      "customer": 3
+    }
+  },
+  {
     "model": "core.saleitem",
     "pk": 1,
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.432Z",
       "sale": 1,
       "product": 1,
-      "quantity": "200.000"
+      "quantity": "200.000",
+      "subtotal": null
     }
   },
   {
@@ -6093,10 +6339,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.395Z",
       "sale": 2,
       "product": 2,
-      "quantity": "500.000"
+      "quantity": "500.000",
+      "subtotal": null
     }
   },
   {
@@ -6105,10 +6352,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.396Z",
       "sale": 3,
       "product": 3,
-      "quantity": "1.500"
+      "quantity": "1.500",
+      "subtotal": null
     }
   },
   {
@@ -6117,10 +6365,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.433Z",
       "sale": 4,
       "product": 3,
-      "quantity": "1.200"
+      "quantity": "1.200",
+      "subtotal": null
     }
   },
   {
@@ -6129,10 +6378,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.273Z",
       "sale": 5,
       "product": 5,
-      "quantity": "300.000"
+      "quantity": "300.000",
+      "subtotal": null
     }
   },
   {
@@ -6141,10 +6391,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.281Z",
       "sale": 1,
       "product": 6,
-      "quantity": "400.000"
+      "quantity": "400.000",
+      "subtotal": null
     }
   },
   {
@@ -6153,10 +6404,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.283Z",
       "sale": 2,
       "product": 7,
-      "quantity": "110.000"
+      "quantity": "110.000",
+      "subtotal": null
     }
   },
   {
@@ -6165,10 +6417,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.284Z",
       "sale": 3,
       "product": 8,
-      "quantity": "1.200"
+      "quantity": "1.200",
+      "subtotal": null
     }
   },
   {
@@ -6177,10 +6430,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.286Z",
       "sale": 4,
       "product": 9,
-      "quantity": "200.000"
+      "quantity": "200.000",
+      "subtotal": null
     }
   },
   {
@@ -6189,10 +6443,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.287Z",
       "sale": 5,
       "product": 10,
-      "quantity": "600.000"
+      "quantity": "600.000",
+      "subtotal": null
     }
   },
   {
@@ -6201,10 +6456,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.289Z",
       "sale": 1,
       "product": 1,
-      "quantity": "800.000"
+      "quantity": "800.000",
+      "subtotal": null
     }
   },
   {
@@ -6213,10 +6469,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.290Z",
       "sale": 2,
       "product": 2,
-      "quantity": "900.000"
+      "quantity": "900.000",
+      "subtotal": null
     }
   },
   {
@@ -6225,10 +6482,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.291Z",
       "sale": 3,
       "product": 3,
-      "quantity": "1.200"
+      "quantity": "1.200",
+      "subtotal": null
     }
   },
   {
@@ -6237,10 +6495,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.292Z",
       "sale": 4,
       "product": 4,
-      "quantity": "2.000"
+      "quantity": "2.000",
+      "subtotal": null
     }
   },
   {
@@ -6249,10 +6508,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.294Z",
       "sale": 5,
       "product": 5,
-      "quantity": "3.000"
+      "quantity": "3.000",
+      "subtotal": null
     }
   },
   {
@@ -6261,10 +6521,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.295Z",
       "sale": 1,
       "product": 6,
-      "quantity": "2.000"
+      "quantity": "2.000",
+      "subtotal": null
     }
   },
   {
@@ -6273,10 +6534,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.296Z",
       "sale": 2,
       "product": 7,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -6285,10 +6547,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.297Z",
       "sale": 3,
       "product": 8,
-      "quantity": "5.000"
+      "quantity": "5.000",
+      "subtotal": null
     }
   },
   {
@@ -6297,10 +6560,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.298Z",
       "sale": 4,
       "product": 9,
-      "quantity": "7.000"
+      "quantity": "7.000",
+      "subtotal": null
     }
   },
   {
@@ -6309,10 +6573,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.299Z",
       "sale": 5,
       "product": 10,
-      "quantity": "2.000"
+      "quantity": "2.000",
+      "subtotal": null
     }
   },
   {
@@ -6321,10 +6586,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.434Z",
       "sale": 1,
       "product": 1,
-      "quantity": "3.000"
+      "quantity": "3.000",
+      "subtotal": null
     }
   },
   {
@@ -6333,10 +6599,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.300Z",
       "sale": 2,
       "product": 2,
-      "quantity": "2.000"
+      "quantity": "2.000",
+      "subtotal": null
     }
   },
   {
@@ -6345,10 +6612,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.301Z",
       "sale": 3,
       "product": 3,
-      "quantity": "4.000"
+      "quantity": "4.000",
+      "subtotal": null
     }
   },
   {
@@ -6357,10 +6625,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.303Z",
       "sale": 4,
       "product": 4,
-      "quantity": "5.000"
+      "quantity": "5.000",
+      "subtotal": null
     }
   },
   {
@@ -6369,10 +6638,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.304Z",
       "sale": 5,
       "product": 5,
-      "quantity": "8.000"
+      "quantity": "8.000",
+      "subtotal": null
     }
   },
   {
@@ -6381,10 +6651,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.306Z",
       "sale": 6,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6393,10 +6664,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.307Z",
       "sale": 6,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6405,10 +6677,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.308Z",
       "sale": 6,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6417,10 +6690,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.309Z",
       "sale": 6,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6429,10 +6703,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.310Z",
       "sale": 6,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6441,10 +6716,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.311Z",
       "sale": 7,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6453,10 +6729,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.313Z",
       "sale": 7,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6465,10 +6742,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.314Z",
       "sale": 7,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6477,10 +6755,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.315Z",
       "sale": 7,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6489,10 +6768,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.316Z",
       "sale": 7,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6501,10 +6781,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.318Z",
       "sale": 8,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6513,10 +6794,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.319Z",
       "sale": 8,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6525,10 +6807,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.435Z",
       "sale": 8,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6537,10 +6820,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.321Z",
       "sale": 8,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6549,10 +6833,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.322Z",
       "sale": 8,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6561,10 +6846,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.323Z",
       "sale": 9,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6573,10 +6859,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.325Z",
       "sale": 9,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6585,10 +6872,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.326Z",
       "sale": 9,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6597,10 +6885,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.327Z",
       "sale": 9,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6609,10 +6898,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.328Z",
       "sale": 9,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6621,10 +6911,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.330Z",
       "sale": 10,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6633,10 +6924,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.331Z",
       "sale": 10,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6645,10 +6937,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.332Z",
       "sale": 10,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6657,10 +6950,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.334Z",
       "sale": 10,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6669,10 +6963,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.335Z",
       "sale": 10,
       "product": 11,
-      "quantity": "16.000"
+      "quantity": "16.000",
+      "subtotal": null
     }
   },
   {
@@ -6681,10 +6976,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.337Z",
       "sale": 11,
       "product": 21,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -6693,10 +6989,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.338Z",
       "sale": 12,
       "product": 22,
-      "quantity": "30.000"
+      "quantity": "30.000",
+      "subtotal": null
     }
   },
   {
@@ -6705,10 +7002,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.339Z",
       "sale": 13,
       "product": 23,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -6717,10 +7015,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.340Z",
       "sale": 14,
       "product": 24,
-      "quantity": "6.000"
+      "quantity": "6.000",
+      "subtotal": null
     }
   },
   {
@@ -6729,10 +7028,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.436Z",
       "sale": 15,
       "product": 25,
-      "quantity": "15.000"
+      "quantity": "15.000",
+      "subtotal": null
     }
   },
   {
@@ -6741,10 +7041,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.341Z",
       "sale": 12,
       "product": 26,
-      "quantity": "21.000"
+      "quantity": "21.000",
+      "subtotal": null
     }
   },
   {
@@ -6753,10 +7054,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.342Z",
       "sale": 14,
       "product": 27,
-      "quantity": "5.000"
+      "quantity": "5.000",
+      "subtotal": null
     }
   },
   {
@@ -6765,10 +7067,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.343Z",
       "sale": 14,
       "product": 28,
-      "quantity": "17.000"
+      "quantity": "17.000",
+      "subtotal": null
     }
   },
   {
@@ -6777,10 +7080,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.344Z",
       "sale": 13,
       "product": 29,
-      "quantity": "30.000"
+      "quantity": "30.000",
+      "subtotal": null
     }
   },
   {
@@ -6789,10 +7093,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.345Z",
       "sale": 11,
       "product": 30,
-      "quantity": "12.000"
+      "quantity": "12.000",
+      "subtotal": null
     }
   },
   {
@@ -6801,10 +7106,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.346Z",
       "sale": 15,
       "product": 22,
-      "quantity": "20.000"
+      "quantity": "20.000",
+      "subtotal": null
     }
   },
   {
@@ -6813,10 +7119,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.347Z",
       "sale": 13,
       "product": 23,
-      "quantity": "45.000"
+      "quantity": "45.000",
+      "subtotal": null
     }
   },
   {
@@ -6825,10 +7132,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.348Z",
       "sale": 15,
       "product": 26,
-      "quantity": "80.000"
+      "quantity": "80.000",
+      "subtotal": null
     }
   },
   {
@@ -6837,10 +7145,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.349Z",
       "sale": 13,
       "product": 27,
-      "quantity": "100.000"
+      "quantity": "100.000",
+      "subtotal": null
     }
   },
   {
@@ -6849,10 +7158,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.350Z",
       "sale": 14,
       "product": 23,
-      "quantity": "20.000"
+      "quantity": "20.000",
+      "subtotal": null
     }
   },
   {
@@ -6861,10 +7171,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.351Z",
       "sale": 12,
       "product": 23,
-      "quantity": "200.000"
+      "quantity": "200.000",
+      "subtotal": null
     }
   },
   {
@@ -6873,10 +7184,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.352Z",
       "sale": 13,
       "product": 30,
-      "quantity": "22.000"
+      "quantity": "22.000",
+      "subtotal": null
     }
   },
   {
@@ -6885,10 +7197,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.353Z",
       "sale": 15,
       "product": 26,
-      "quantity": "123.000"
+      "quantity": "123.000",
+      "subtotal": null
     }
   },
   {
@@ -6897,10 +7210,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.354Z",
       "sale": 13,
       "product": 23,
-      "quantity": "90.000"
+      "quantity": "90.000",
+      "subtotal": null
     }
   },
   {
@@ -6909,10 +7223,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.355Z",
       "sale": 11,
       "product": 28,
-      "quantity": "1000.000"
+      "quantity": "1000.000",
+      "subtotal": null
     }
   },
   {
@@ -6921,10 +7236,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.356Z",
       "sale": 13,
       "product": 23,
-      "quantity": "356.000"
+      "quantity": "356.000",
+      "subtotal": null
     }
   },
   {
@@ -6933,10 +7249,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.436Z",
       "sale": 15,
       "product": 22,
-      "quantity": "65.000"
+      "quantity": "65.000",
+      "subtotal": null
     }
   },
   {
@@ -6945,10 +7262,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.357Z",
       "sale": 13,
       "product": 23,
-      "quantity": "2000.000"
+      "quantity": "2000.000",
+      "subtotal": null
     }
   },
   {
@@ -6957,10 +7275,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.358Z",
       "sale": 13,
       "product": 29,
-      "quantity": "300.000"
+      "quantity": "300.000",
+      "subtotal": null
     }
   },
   {
@@ -6969,10 +7288,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.358Z",
       "sale": 14,
       "product": 23,
-      "quantity": "55.000"
+      "quantity": "55.000",
+      "subtotal": null
     }
   },
   {
@@ -6981,10 +7301,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.359Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -6993,10 +7314,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.360Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7005,10 +7327,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.361Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7017,10 +7340,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.362Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7029,10 +7353,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.363Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7041,10 +7366,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.364Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7053,10 +7379,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.364Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7065,10 +7392,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.365Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7077,10 +7405,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.366Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7089,10 +7418,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.367Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7101,10 +7431,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.368Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7113,10 +7444,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.369Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7125,10 +7457,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.370Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7137,10 +7470,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.437Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7149,10 +7483,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.370Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7161,10 +7496,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.371Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7173,10 +7509,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.372Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7185,10 +7522,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.373Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7197,10 +7535,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.374Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7209,10 +7548,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.375Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7221,10 +7561,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.375Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7233,10 +7574,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.376Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7245,10 +7587,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.377Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7257,10 +7600,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.378Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7269,10 +7613,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.379Z",
       "sale": 16,
       "product": 31,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7281,10 +7626,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.380Z",
       "sale": 21,
       "product": 41,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7293,10 +7639,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.380Z",
       "sale": 21,
       "product": 42,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7305,10 +7652,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.381Z",
       "sale": 21,
       "product": 43,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7317,10 +7665,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.382Z",
       "sale": 21,
       "product": 44,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7329,10 +7678,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.383Z",
       "sale": 21,
       "product": 45,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7341,10 +7691,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.438Z",
       "sale": 23,
       "product": 46,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7353,10 +7704,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.384Z",
       "sale": 23,
       "product": 47,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7365,10 +7717,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.385Z",
       "sale": 23,
       "product": 48,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7377,10 +7730,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.385Z",
       "sale": 23,
       "product": 49,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7389,10 +7743,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.386Z",
       "sale": 23,
       "product": 50,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7401,10 +7756,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.387Z",
       "sale": 25,
       "product": 41,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7413,10 +7769,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.388Z",
       "sale": 25,
       "product": 42,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7425,10 +7782,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.389Z",
       "sale": 25,
       "product": 43,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7437,10 +7795,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.390Z",
       "sale": 25,
       "product": 44,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7449,10 +7808,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.390Z",
       "sale": 25,
       "product": 45,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7461,10 +7821,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.391Z",
       "sale": 22,
       "product": 46,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7473,10 +7834,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.392Z",
       "sale": 22,
       "product": 47,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7485,10 +7847,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.393Z",
       "sale": 22,
       "product": 48,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7497,10 +7860,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.394Z",
       "sale": 22,
       "product": 49,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7509,10 +7873,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.395Z",
       "sale": 22,
       "product": 50,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7521,10 +7886,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.439Z",
       "sale": 24,
       "product": 41,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7533,10 +7899,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.440Z",
       "sale": 24,
       "product": 42,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7545,10 +7912,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.397Z",
       "sale": 24,
       "product": 43,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7557,10 +7925,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.398Z",
       "sale": 24,
       "product": 44,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7569,10 +7938,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.399Z",
       "sale": 24,
       "product": 45,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7581,10 +7951,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.400Z",
       "sale": 26,
       "product": 24,
-      "quantity": "200.000"
+      "quantity": "200.000",
+      "subtotal": null
     }
   },
   {
@@ -7593,10 +7964,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.400Z",
       "sale": 27,
       "product": 35,
-      "quantity": "500.000"
+      "quantity": "500.000",
+      "subtotal": null
     }
   },
   {
@@ -7605,10 +7977,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.401Z",
       "sale": 28,
       "product": 25,
-      "quantity": "600.000"
+      "quantity": "600.000",
+      "subtotal": null
     }
   },
   {
@@ -7617,10 +7990,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.402Z",
       "sale": 29,
       "product": 43,
-      "quantity": "900.000"
+      "quantity": "900.000",
+      "subtotal": null
     }
   },
   {
@@ -7629,10 +8003,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.403Z",
       "sale": 30,
       "product": 23,
-      "quantity": "100.000"
+      "quantity": "100.000",
+      "subtotal": null
     }
   },
   {
@@ -7641,10 +8016,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.404Z",
       "sale": 31,
       "product": 12,
-      "quantity": "50.000"
+      "quantity": "50.000",
+      "subtotal": null
     }
   },
   {
@@ -7653,10 +8029,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.405Z",
       "sale": 32,
       "product": 27,
-      "quantity": "50.000"
+      "quantity": "50.000",
+      "subtotal": null
     }
   },
   {
@@ -7665,10 +8042,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.406Z",
       "sale": 33,
       "product": 53,
-      "quantity": "90.000"
+      "quantity": "90.000",
+      "subtotal": null
     }
   },
   {
@@ -7677,10 +8055,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.406Z",
       "sale": 34,
       "product": 35,
-      "quantity": "30.000"
+      "quantity": "30.000",
+      "subtotal": null
     }
   },
   {
@@ -7689,10 +8068,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.415Z",
       "sale": 35,
       "product": 56,
-      "quantity": "150.000"
+      "quantity": "150.000",
+      "subtotal": null
     }
   },
   {
@@ -7701,10 +8081,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.416Z",
       "sale": 25,
       "product": 32,
-      "quantity": "220.000"
+      "quantity": "220.000",
+      "subtotal": null
     }
   },
   {
@@ -7713,10 +8094,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.417Z",
       "sale": 34,
       "product": 44,
-      "quantity": "450.000"
+      "quantity": "450.000",
+      "subtotal": null
     }
   },
   {
@@ -7725,10 +8107,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.417Z",
       "sale": 34,
       "product": 43,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -7737,10 +8120,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.418Z",
       "sale": 34,
       "product": 23,
-      "quantity": "50.000"
+      "quantity": "50.000",
+      "subtotal": null
     }
   },
   {
@@ -7749,10 +8133,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.419Z",
       "sale": 1,
       "product": 1,
-      "quantity": "30.000"
+      "quantity": "30.000",
+      "subtotal": null
     }
   },
   {
@@ -7761,10 +8146,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.420Z",
       "sale": 12,
       "product": 11,
-      "quantity": "60.000"
+      "quantity": "60.000",
+      "subtotal": null
     }
   },
   {
@@ -7773,10 +8159,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.421Z",
       "sale": 11,
       "product": 4,
-      "quantity": "80.000"
+      "quantity": "80.000",
+      "subtotal": null
     }
   },
   {
@@ -7785,10 +8172,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.421Z",
       "sale": 10,
       "product": 5,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -7797,10 +8185,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.422Z",
       "sale": 9,
       "product": 9,
-      "quantity": "20.000"
+      "quantity": "20.000",
+      "subtotal": null
     }
   },
   {
@@ -7809,10 +8198,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.423Z",
       "sale": 8,
       "product": 12,
-      "quantity": "20.000"
+      "quantity": "20.000",
+      "subtotal": null
     }
   },
   {
@@ -7821,10 +8211,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.424Z",
       "sale": 23,
       "product": 33,
-      "quantity": "100.000"
+      "quantity": "100.000",
+      "subtotal": null
     }
   },
   {
@@ -7833,10 +8224,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.425Z",
       "sale": 1,
       "product": 38,
-      "quantity": "600.000"
+      "quantity": "600.000",
+      "subtotal": null
     }
   },
   {
@@ -7845,10 +8237,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.426Z",
       "sale": 34,
       "product": 51,
-      "quantity": "500.000"
+      "quantity": "500.000",
+      "subtotal": null
     }
   },
   {
@@ -7857,10 +8250,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.407Z",
       "sale": 23,
       "product": 59,
-      "quantity": "400.000"
+      "quantity": "400.000",
+      "subtotal": null
     }
   },
   {
@@ -7869,10 +8263,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.408Z",
       "sale": 32,
       "product": 52,
-      "quantity": "300.000"
+      "quantity": "300.000",
+      "subtotal": null
     }
   },
   {
@@ -7881,10 +8276,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.409Z",
       "sale": 31,
       "product": 61,
-      "quantity": "34.000"
+      "quantity": "34.000",
+      "subtotal": null
     }
   },
   {
@@ -7893,10 +8289,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.410Z",
       "sale": 32,
       "product": 62,
-      "quantity": "67.000"
+      "quantity": "67.000",
+      "subtotal": null
     }
   },
   {
@@ -7905,10 +8302,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.411Z",
       "sale": 33,
       "product": 63,
-      "quantity": "23.000"
+      "quantity": "23.000",
+      "subtotal": null
     }
   },
   {
@@ -7917,10 +8315,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.411Z",
       "sale": 34,
       "product": 64,
-      "quantity": "13.000"
+      "quantity": "13.000",
+      "subtotal": null
     }
   },
   {
@@ -7929,10 +8328,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.412Z",
       "sale": 35,
       "product": 65,
-      "quantity": "1.000"
+      "quantity": "1.000",
+      "subtotal": null
     }
   },
   {
@@ -7941,10 +8341,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.413Z",
       "sale": 25,
       "product": 66,
-      "quantity": "29.000"
+      "quantity": "29.000",
+      "subtotal": null
     }
   },
   {
@@ -7953,10 +8354,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.414Z",
       "sale": 34,
       "product": 67,
-      "quantity": "15.000"
+      "quantity": "15.000",
+      "subtotal": null
     }
   },
   {
@@ -7965,10 +8367,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.441Z",
       "sale": 31,
       "product": 68,
-      "quantity": "27.000"
+      "quantity": "27.000",
+      "subtotal": null
     }
   },
   {
@@ -7977,10 +8380,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.441Z",
       "sale": 32,
       "product": 69,
-      "quantity": "21.000"
+      "quantity": "21.000",
+      "subtotal": null
     }
   },
   {
@@ -7989,10 +8393,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.442Z",
       "sale": 33,
       "product": 70,
-      "quantity": "22.000"
+      "quantity": "22.000",
+      "subtotal": null
     }
   },
   {
@@ -8001,10 +8406,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.443Z",
       "sale": 31,
       "product": 61,
-      "quantity": "17.000"
+      "quantity": "17.000",
+      "subtotal": null
     }
   },
   {
@@ -8013,10 +8419,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.444Z",
       "sale": 32,
       "product": 63,
-      "quantity": "23.000"
+      "quantity": "23.000",
+      "subtotal": null
     }
   },
   {
@@ -8025,10 +8432,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.445Z",
       "sale": 33,
       "product": 65,
-      "quantity": "14.000"
+      "quantity": "14.000",
+      "subtotal": null
     }
   },
   {
@@ -8037,10 +8445,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.446Z",
       "sale": 34,
       "product": 64,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -8049,10 +8458,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.447Z",
       "sale": 35,
       "product": 65,
-      "quantity": "19.000"
+      "quantity": "19.000",
+      "subtotal": null
     }
   },
   {
@@ -8061,10 +8471,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.448Z",
       "sale": 25,
       "product": 66,
-      "quantity": "18.000"
+      "quantity": "18.000",
+      "subtotal": null
     }
   },
   {
@@ -8073,10 +8484,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.448Z",
       "sale": 34,
       "product": 67,
-      "quantity": "17.000"
+      "quantity": "17.000",
+      "subtotal": null
     }
   },
   {
@@ -8085,10 +8497,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.449Z",
       "sale": 31,
       "product": 68,
-      "quantity": "6.000"
+      "quantity": "6.000",
+      "subtotal": null
     }
   },
   {
@@ -8097,10 +8510,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.450Z",
       "sale": 33,
       "product": 70,
-      "quantity": "15.000"
+      "quantity": "15.000",
+      "subtotal": null
     }
   },
   {
@@ -8109,10 +8523,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.451Z",
       "sale": 32,
       "product": 61,
-      "quantity": "32.000"
+      "quantity": "32.000",
+      "subtotal": null
     }
   },
   {
@@ -8121,10 +8536,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.452Z",
       "sale": 33,
       "product": 62,
-      "quantity": "4.000"
+      "quantity": "4.000",
+      "subtotal": null
     }
   },
   {
@@ -8133,10 +8549,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.453Z",
       "sale": 34,
       "product": 63,
-      "quantity": "11.000"
+      "quantity": "11.000",
+      "subtotal": null
     }
   },
   {
@@ -8145,10 +8562,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.426Z",
       "sale": 35,
       "product": 64,
-      "quantity": "23.000"
+      "quantity": "23.000",
+      "subtotal": null
     }
   },
   {
@@ -8157,10 +8575,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.427Z",
       "sale": 25,
       "product": 65,
-      "quantity": "12.000"
+      "quantity": "12.000",
+      "subtotal": null
     }
   },
   {
@@ -8169,10 +8588,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.428Z",
       "sale": 34,
       "product": 67,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -8181,10 +8601,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.429Z",
       "sale": 17,
       "product": 1,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -8193,10 +8614,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.430Z",
       "sale": 18,
       "product": 1,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -8205,10 +8627,11 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.431Z",
       "sale": 19,
       "product": 1,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
     }
   },
   {
@@ -8217,10 +8640,232 @@
     "fields": {
       "active": true,
       "created_at": "2019-05-15T23:20:37.889Z",
-      "modified_at": "2019-05-15T23:20:37.889Z",
+      "modified_at": "2019-05-21T22:40:48.431Z",
       "sale": 20,
       "product": 1,
-      "quantity": "10.000"
+      "quantity": "10.000",
+      "subtotal": null
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 180,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-21T22:45:11.968Z",
+      "modified_at": "2019-05-21T22:45:11.979Z",
+      "sale": 1,
+      "product": 1,
+      "quantity": "200.000",
+      "subtotal": "36000.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 181,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:30:11.492Z",
+      "modified_at": "2019-05-22T00:30:11.493Z",
+      "sale": 100,
+      "product": 1,
+      "quantity": "10.000",
+      "subtotal": "1800.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 184,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:36:39.338Z",
+      "modified_at": "2019-05-22T00:36:39.340Z",
+      "sale": 103,
+      "product": 1,
+      "quantity": "10.000",
+      "subtotal": "1800.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 185,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:44:13.124Z",
+      "modified_at": "2019-05-22T00:44:13.126Z",
+      "sale": 104,
+      "product": 1,
+      "quantity": "20.000",
+      "subtotal": "3600.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 187,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:35:43.778Z",
+      "modified_at": "2019-05-23T01:35:43.783Z",
+      "sale": 112,
+      "product": 1,
+      "quantity": "200.000",
+      "subtotal": "36000.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 188,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:36:40.432Z",
+      "modified_at": "2019-05-23T01:36:40.439Z",
+      "sale": 113,
+      "product": 1,
+      "quantity": "1000.000",
+      "subtotal": "180000.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 189,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T02:00:26.598Z",
+      "modified_at": "2019-05-23T02:00:26.601Z",
+      "sale": 121,
+      "product": 1,
+      "quantity": "700.000",
+      "subtotal": "126000.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 190,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:04:33.754Z",
+      "modified_at": "2019-05-23T23:04:33.757Z",
+      "sale": 122,
+      "product": 1,
+      "quantity": "2.000",
+      "subtotal": "360.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 191,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:05:38.572Z",
+      "modified_at": "2019-05-23T23:05:38.573Z",
+      "sale": 123,
+      "product": 1,
+      "quantity": "4.000",
+      "subtotal": "720.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 192,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:09:44.029Z",
+      "modified_at": "2019-05-23T23:09:44.030Z",
+      "sale": 124,
+      "product": 3,
+      "quantity": "1.000",
+      "subtotal": "138.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 193,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:14:50.188Z",
+      "modified_at": "2019-05-23T23:14:50.189Z",
+      "sale": 125,
+      "product": 4,
+      "quantity": "1.000",
+      "subtotal": "240.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 194,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:15:56.383Z",
+      "modified_at": "2019-05-23T23:15:56.384Z",
+      "sale": 126,
+      "product": 3,
+      "quantity": "1.000",
+      "subtotal": "138.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 195,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:27.230Z",
+      "modified_at": "2019-05-23T23:16:27.231Z",
+      "sale": 127,
+      "product": 4,
+      "quantity": "2.000",
+      "subtotal": "480.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 196,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:20:22.829Z",
+      "modified_at": "2019-05-23T23:20:22.830Z",
+      "sale": 128,
+      "product": 4,
+      "quantity": "2.000",
+      "subtotal": "480.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 197,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:24:03.583Z",
+      "modified_at": "2019-05-23T23:24:03.584Z",
+      "sale": 129,
+      "product": 2,
+      "quantity": "2.000",
+      "subtotal": "300.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 198,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:47.051Z",
+      "modified_at": "2019-05-23T23:31:47.052Z",
+      "sale": 130,
+      "product": 3,
+      "quantity": "1.000",
+      "subtotal": "138.0000"
+    }
+  },
+  {
+    "model": "core.saleitem",
+    "pk": 199,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:47.057Z",
+      "modified_at": "2019-05-23T23:31:47.058Z",
+      "sale": 130,
+      "product": 4,
+      "quantity": "2.000",
+      "subtotal": "480.0000"
     }
   },
   {
@@ -8725,6 +9370,351 @@
       "sale": 35,
       "means_payment": 5,
       "value": "7350000.0000"
+    }
+  },
+  {
+    "model": "core.stockaddress",
+    "pk": 1,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-21T23:43:40.257Z",
+      "modified_at": "2019-05-21T23:43:40.257Z",
+      "description": "SAIDA"
+    }
+  },
+  {
+    "model": "core.stockaddress",
+    "pk": 2,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-21T23:43:45.067Z",
+      "modified_at": "2019-05-21T23:43:45.067Z",
+      "description": "ENTRADA"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 4,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:36:39.336Z",
+      "modified_at": "2019-05-22T00:36:39.336Z",
+      "date": "2019-05-22",
+      "stock_address": 1,
+      "type": "O",
+      "document": "103"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 5,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:44:13.122Z",
+      "modified_at": "2019-05-22T00:44:13.122Z",
+      "date": "2019-05-22",
+      "stock_address": 1,
+      "type": "O",
+      "document": "104"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 7,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:35:43.771Z",
+      "modified_at": "2019-05-23T01:35:43.771Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "112"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 8,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:36:40.425Z",
+      "modified_at": "2019-05-23T01:36:40.425Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "113"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 9,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T02:00:26.630Z",
+      "modified_at": "2019-05-23T02:00:26.630Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "121"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 10,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:04:33.785Z",
+      "modified_at": "2019-05-23T23:04:33.785Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "122"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 11,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:05:38.610Z",
+      "modified_at": "2019-05-23T23:05:38.610Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "123"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 12,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:09:44.054Z",
+      "modified_at": "2019-05-23T23:09:44.054Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "124"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 13,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:51.752Z",
+      "modified_at": "2019-05-23T23:16:51.752Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "125"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 14,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:51.767Z",
+      "modified_at": "2019-05-23T23:16:51.767Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "126"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 15,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:51.780Z",
+      "modified_at": "2019-05-23T23:16:51.780Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "127"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 16,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:24:05.771Z",
+      "modified_at": "2019-05-23T23:24:05.771Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "129"
+    }
+  },
+  {
+    "model": "core.movementstock",
+    "pk": 17,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:49.533Z",
+      "modified_at": "2019-05-23T23:31:49.533Z",
+      "date": "2019-05-23",
+      "stock_address": 1,
+      "type": "O",
+      "document": "130"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 5,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:36:39.346Z",
+      "modified_at": "2019-05-22T00:36:39.346Z",
+      "movement_stock": 4,
+      "product": 1,
+      "quantity": "10.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 6,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-22T00:44:13.132Z",
+      "modified_at": "2019-05-22T00:44:13.132Z",
+      "movement_stock": 5,
+      "product": 1,
+      "quantity": "20.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 7,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:35:53.049Z",
+      "modified_at": "2019-05-23T01:35:53.049Z",
+      "movement_stock": 7,
+      "product": 1,
+      "quantity": "200.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 8,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T01:36:42.501Z",
+      "modified_at": "2019-05-23T01:36:42.501Z",
+      "movement_stock": 8,
+      "product": 1,
+      "quantity": "1000.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 9,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T02:00:26.642Z",
+      "modified_at": "2019-05-23T02:00:26.642Z",
+      "movement_stock": 9,
+      "product": 1,
+      "quantity": "700.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 10,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:04:39.054Z",
+      "modified_at": "2019-05-23T23:04:39.054Z",
+      "movement_stock": 10,
+      "product": 1,
+      "quantity": "2.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 11,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:05:44.115Z",
+      "modified_at": "2019-05-23T23:05:44.115Z",
+      "movement_stock": 11,
+      "product": 1,
+      "quantity": "4.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 12,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:09:49.890Z",
+      "modified_at": "2019-05-23T23:09:49.890Z",
+      "movement_stock": 12,
+      "product": 3,
+      "quantity": "1.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 13,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:51.771Z",
+      "modified_at": "2019-05-23T23:16:51.771Z",
+      "movement_stock": 13,
+      "product": 4,
+      "quantity": "1.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 14,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:16:51.777Z",
+      "modified_at": "2019-05-23T23:16:51.777Z",
+      "movement_stock": 14,
+      "product": 3,
+      "quantity": "1.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 15,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:24:08.742Z",
+      "modified_at": "2019-05-23T23:24:08.742Z",
+      "movement_stock": 16,
+      "product": 2,
+      "quantity": "2.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 16,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:52.671Z",
+      "modified_at": "2019-05-23T23:31:52.671Z",
+      "movement_stock": 17,
+      "product": 3,
+      "quantity": "1.000"
+    }
+  },
+  {
+    "model": "core.movementstockitem",
+    "pk": 17,
+    "fields": {
+      "active": true,
+      "created_at": "2019-05-23T23:31:52.671Z",
+      "modified_at": "2019-05-23T23:31:52.671Z",
+      "movement_stock": 17,
+      "product": 4,
+      "quantity": "2.000"
     }
   },
   {
@@ -9517,6 +10507,353 @@
       "name": "Can view means payment sale",
       "content_type": 22,
       "codename": "view_meanspaymentsale"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+      "name": "Can add movement stock",
+      "content_type": 23,
+      "codename": "add_movementstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+      "name": "Can change movement stock",
+      "content_type": 23,
+      "codename": "change_movementstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+      "name": "Can delete movement stock",
+      "content_type": 23,
+      "codename": "delete_movementstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+      "name": "Can view movement stock",
+      "content_type": 23,
+      "codename": "view_movementstock"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+      "name": "Can add stock address",
+      "content_type": 24,
+      "codename": "add_stockaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+      "name": "Can change stock address",
+      "content_type": 24,
+      "codename": "change_stockaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+      "name": "Can delete stock address",
+      "content_type": 24,
+      "codename": "delete_stockaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+      "name": "Can view stock address",
+      "content_type": 24,
+      "codename": "view_stockaddress"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+      "name": "Can add movement stock item",
+      "content_type": 25,
+      "codename": "add_movementstockitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+      "name": "Can change movement stock item",
+      "content_type": 25,
+      "codename": "change_movementstockitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+      "name": "Can delete movement stock item",
+      "content_type": 25,
+      "codename": "delete_movementstockitem"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+      "name": "Can view movement stock item",
+      "content_type": 25,
+      "codename": "view_movementstockitem"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$uSj9bI5y0yrK$NDxPybX59wQtvXapFo11G2gBzEq/z18/k29WRKFnqcU=",
+      "last_login": "2019-05-23T23:04:20.120Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2019-05-21T23:42:34.240Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2019-05-21T23:43:40.258Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "1",
+      "object_repr": "StockAddress object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2019-05-21T23:43:45.068Z",
+      "user": 1,
+      "content_type": 24,
+      "object_id": "2",
+      "object_repr": "StockAddress object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2019-05-22T00:30:11.499Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "100",
+      "object_repr": "Sale object (100)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (181)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2019-05-22T00:36:39.349Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "103",
+      "object_repr": "Sale object (103)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (184)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2019-05-22T00:44:13.134Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "104",
+      "object_repr": "Sale object (104)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (185)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2019-05-23T01:35:53.080Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "112",
+      "object_repr": "Sale object (112)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (187)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2019-05-23T01:36:42.506Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "113",
+      "object_repr": "Sale object (113)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (188)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2019-05-23T02:00:26.609Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "121",
+      "object_repr": "Sale object (121)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (189)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2019-05-23T23:04:33.761Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "122",
+      "object_repr": "Sale object (122)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (190)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2019-05-23T23:05:38.577Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "123",
+      "object_repr": "Sale object (123)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (191)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2019-05-23T23:09:44.033Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "124",
+      "object_repr": "Sale object (124)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (192)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2019-05-23T23:14:50.193Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "125",
+      "object_repr": "Sale object (125)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (193)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2019-05-23T23:15:56.387Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "126",
+      "object_repr": "Sale object (126)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (194)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2019-05-23T23:16:27.234Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "127",
+      "object_repr": "Sale object (127)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (195)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2019-05-23T23:20:22.833Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "128",
+      "object_repr": "Sale object (128)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (196)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2019-05-23T23:24:03.587Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "129",
+      "object_repr": "Sale object (129)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (197)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2019-05-23T23:31:47.061Z",
+      "user": 1,
+      "content_type": 17,
+      "object_id": "130",
+      "object_repr": "Sale object (130)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (198)\"}}, {\"added\": {\"name\": \"sale item\", \"object\": \"SaleItem object (199)\"}}]"
     }
   }
 ]
