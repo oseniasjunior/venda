@@ -58,6 +58,8 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = models.Product.objects.all()
     serializer_class = serializers.ProductSerializer
     filter_class = filters.ProductFilterSet
+    ordering_fields = '__all__'
+    ordering = ('-id',)
 
 
 class SupplierViewSet(viewsets.ModelViewSet):
