@@ -18,6 +18,7 @@ app.config_from_object('django.conf:settings', namespace='CELERY')
 # Load task modules from all registered Django app configs.
 app.autodiscover_tasks()
 
-# app.conf.task_queues = (
-#     Queue('alguma', Exchange('alguma'), routing_key='alguma'),
-# )
+app.conf.task_queues = (
+    Queue('stock', Exchange('stock'), routing_key='stock'),
+    Queue('celery', Exchange('celery'), routing_key='celery'),
+)
