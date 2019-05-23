@@ -24,6 +24,11 @@ router.register('zone', viewset=viewsets.ZoneViewSet)
 router.register('state', viewset=viewsets.StateViewSet)
 router.register('city', viewset=viewsets.CityViewSet)
 router.register('district', viewset=viewsets.DistrictViewSet)
+router.register('stock_address', viewset=viewsets.StockAddressViewSet)
+router.register('product_group', viewset=viewsets.ProductGroupViewSet)
+router.register('product', viewset=viewsets.ProductViewSet)
+router.register('supplier', viewset=viewsets.SupplierViewSet)
+router.register('movement_stock', viewset=viewsets.MovementStockViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
