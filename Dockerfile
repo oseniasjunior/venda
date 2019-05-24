@@ -12,6 +12,7 @@ RUN mkdir -p $APP_PATH \
     build-essential \
     ncurses-dev \
     libjpeg62-turbo-dev \
+    libpq-dev \
     libpng-dev \
     gettext \
   && apt-get autoremove -y \
@@ -24,8 +25,9 @@ RUN mkdir -p $APP_PATH \
 
 COPY . $APP_PATH
 
-RUN pip install --upgrade pip \
+RUN pip install --upgrade pip setuptools \
   && pip install --no-cache-dir -r requirements.txt \
   && mkdir -p assets/static \
   && python manage.py collectstatic --noinput
 
+#ENTRYPOINT ['python', '/usr/src/app/manage.py', 'runserver', '0.0.0.0:9000']
