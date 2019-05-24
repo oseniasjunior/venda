@@ -16,7 +16,7 @@ def update_subtotal(sender, instance: models.SaleItem, created=False, **kwargs):
 @receiver(post_save, sender=models.Sale, dispatch_uid="generate_movement_stock", weak=False)
 def generate_movement_stock(sender, instance: models.Sale, created=False, **kwargs):
     if created:
-        tasks.generate_movement_stock.apply_async([instance.id])
+        tasks.generate_movement_stock.apply_async([instance.id], countdown=2)
 
 
 @receiver(post_save, sender=models.SaleItem, dispatch_uid="generate_movement_stock_item", weak=False)
