@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'rest_framework',
     'django_filters',
-    'corsheaders'
+    'corsheaders',
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -175,13 +176,13 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_IGNORE_RESULT = True
 CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 
-# ASGI_APPLICATION = 'sfc.routing.application'
-#
-# CHANNEL_LAYERS = {
-#     'default': {
-#         'BACKEND': 'channels_redis.core.RedisChannelLayer',
-#         'CONFIG': {
-#             'hosts': ['redis://redis:6379/0'],
-#         },
-#     },
-# }
+ASGI_APPLICATION = 'venda.routing.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            'hosts': ['redis://redis:6379/0'],
+        },
+    },
+}
