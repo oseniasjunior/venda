@@ -1,4 +1,6 @@
 from celery import shared_task
+from celery.schedules import crontab
+from celery.task import periodic_task
 
 from core import actions, models
 
@@ -13,3 +15,14 @@ def generate_movement_stock(sale: int):
 def generate_movement_stock_item(sale_item: int):
     instance = models.SaleItem.objects.get(pk=sale_item)
     actions.generate_movement_stock_item(instance=instance)
+
+
+MINUTES = "00, 10, 20, 30, 40, 50"
+
+
+@periodic_task(
+    run_every=(crontab(hour="*", minute=MINUTES, day_of_week="*")),
+    options={'queue': 'stock'}
+)
+def test():
+    pass
