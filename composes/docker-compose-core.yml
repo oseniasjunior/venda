@@ -1,0 +1,39 @@
+version: '3'
+services:
+
+  core:
+    image: venda/venda-core
+    hostname: core
+    ports:
+      - 8000:8000
+    command: /bin/sh -c "./wait.py postgres 5432 120 && python -u manage.py migrate && gunicorn --bind=0.0.0.0:8000 venda.wsgi:application"
+
+  daphne:
+    image: venda/venda-core
+    hostname: daphne
+    ports:
+      - 7000:7000
+    command: /bin/sh -c "./wait.py postgres 5432 120 && daphne venda.asgi:application"
+
+
+  celery_default:
+    image: venda/venda-core
+    hostname: celery_default
+    command: /bin/sh -c "./wait.py postgres 5432 120 && python -u -m celery -A venda worker -B -l info -Q default"
+
+  celery_stock:
+    image: venda/venda-core
+    hostname: celery_stock
+    command: /bin/sh -c "./wait.py postgres 5432 120 && python -u -m celery -A venda worker -B -l info -Q stock"
+
+  flower:
+    image: venda/venda-core
+    hostname: flower
+    ports:
+      - 5555:5555
+    command: /bin/sh -c "./wait.py postgres 5432 120 && python -u -m celery -A venda flower -l info"
+
+networks:
+  default:
+    external:
+      name: sale_network
